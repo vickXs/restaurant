@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buka & Bistro | Authentic Nigerian & Continental Cuisine</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        food: {
+                            dark: '#261c14',      /* Deep Espresso */
+                            cream: '#fdfbf7',     /* Warm Cream Background */
+                            terracotta: '#c85a32',/* Rich appetizing terracotta */
+                            gold: '#d4af37',      /* Accent Gold */
+                            sage: '#6b705c'       /* Fresh herbal accent */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-food-cream text-food-dark antialiased">
+
+    <!-- 1. Sticky Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-food-dark/95 backdrop-blur-md text-white border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-2xl font-bold tracking-wider text-food-gold flex items-center gap-2">
+                <i class="fa-solid fa-utensils"></i> BUKA & BISTRO
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="#menu" class="hover:text-food-gold transition-colors">Interactive Menu</a>
+                <a href="#story" class="hover:text-food-gold transition-colors">Our Philosophy</a>
+                <a href="#gallery" class="hover:text-food-gold transition-colors">Ambiance</a>
+                <a href="#events" class="hover:text-food-gold transition-colors">Private Dining</a>
+                <a href="#hours" class="hover:text-food-gold transition-colors">Hours & Location</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="#reserve" class="bg-food-terracotta hover:bg-[#b04a25] text-white px-5 py-2.5 rounded-full text-sm font-semibold tracking-wide transition-all shadow-md">
+                    Reserve a Table
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Hero Stage -->
+    <section class="relative h-[85vh] bg-food-dark overflow-hidden flex items-center justify-center text-center">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1920&q=80" alt="Nigerian Cuisine Spread" class="w-full h-full object-cover opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-t from-food-dark via-food-dark/60 to-transparent"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-6">
+            <span class="bg-food-terracotta text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6 inline-block shadow-sm">
+                🔥 Lagos & Continental Fine Dining
+            </span>
+            <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                Where Heritage Meets Modern Gastronomy
+            </h1>
+            <p class="text-gray-300 text-lg sm:text-xl font-light mb-8 max-w-2xl mx-auto leading-relaxed">
+                Immersive culinary storytelling celebrating rich West African spices, wood-fired grills, and refined continental pairings.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#menu" class="w-full sm:w-auto bg-food-gold hover:bg-[#c29f2e] text-food-dark font-bold px-8 py-4 rounded-full transition-all shadow-lg">
+                    Explore Interactive Menu
+                </a>
+                <a href="#reserve" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/20 text-white font-medium px-8 py-4 rounded-full transition-all backdrop-blur-sm">
+                    Book Your Experience
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Brand Narrative & Philosophy -->
+    <section id="story" class="py-24 px-6 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+            <span class="text-food-terracotta uppercase tracking-widest text-xs font-bold mb-2 block">Our Culinary Ethos</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-6">Rooted in Tradition, Elevated by Craft</h2>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+                Founded with a passion for authentic Nigerian flavors, Buka & Bistro reimagines classic street and home-cooked staples into exquisite dining artistry. Every bell pepper, stockfish cut, and yam tuber is sourced directly from certified local farmers who share our commitment to sustainability and supreme quality.
+            </p>
+            <div class="grid grid-cols-2 gap-6 pt-4 border-t border-gray-200">
+                <div>
+                    <span class="font-serif text-3xl font-bold text-food-terracotta block">100%</span>
+                    <span class="text-xs text-gray-500 uppercase tracking-wider">Locally Sourced Ingredients</span>
+                </div>
+                <div>
+                    <span class="font-serif text-3xl font-bold text-food-terracotta block">4.9 ★</span>
+                    <span class="text-xs text-gray-500 uppercase tracking-wider">Guest Satisfaction Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Chef Plating" class="rounded-2xl shadow-md object-cover h-72 w-full">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80" alt="Fine Dining Dish" class="rounded-2xl shadow-md object-cover h-72 w-full mt-8">
+        </div>
+    </section>
+
+    <!-- 4. Dynamic Menu Engine with Images -->
+    <section id="menu" class="py-24 px-6 bg-white border-y border-orange-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-food-terracotta uppercase tracking-widest text-xs font-bold mb-2 block">Live Culinary Catalog</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold">Discover Our Signature Menu</h2>
+                <div class="w-12 h-1 bg-food-terracotta mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12" id="menu-tabs">
+                <button onclick="filterMenu('all')" class="menu-tab-btn active px-6 py-2.5 rounded-full text-sm font-semibold bg-food-dark text-white transition-all shadow-sm">All Selections</button>
+                <button onclick="filterMenu('mains')" class="menu-tab-btn px-6 py-2.5 rounded-full text-sm font-semibold bg-food-cream text-food-dark hover:bg-orange-100 transition-all">Mains & Swallow</button>
+                <button onclick="filterMenu('grills')" class="menu-tab-btn px-6 py-2.5 rounded-full text-sm font-semibold bg-food-cream text-food-dark hover:bg-orange-100 transition-all">Grills & Suya</button>
+                <button onclick="filterMenu('starters')" class="menu-tab-btn px-6 py-2.5 rounded-full text-sm font-semibold bg-food-cream text-food-dark hover:bg-orange-100 transition-all">Starters & Small Plates</button>
+                <button onclick="filterMenu('drinks')" class="menu-tab-btn px-6 py-2.5 rounded-full text-sm font-semibold bg-food-cream text-food-dark hover:bg-orange-100 transition-all">Cocktails & Mocktails</button>
+            </div>
+
+            <!-- Menu Grid with Image Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="menu-grid">
+                <!-- Item 1 -->
+                <div class="menu-item bg-food-cream rounded-2xl overflow-hidden border border-orange-100 shadow-sm flex flex-col justify-between" data-category="mains">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Party Jollof Rice" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-baseline mb-3">
+                            <h3 class="font-serif text-xl font-bold">Party Jollof & Smoked Turkey</h3>
+                            <span class="text-food-terracotta font-bold text-lg">₦9,500</span>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Legendary firewood-flavor jollof rice simmered in rich bell pepper stock, served with caramelized plantains and tender smoked turkey.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-orange-200/50">
+                            <span class="text-xs uppercase tracking-wider font-semibold text-food-sage bg-white px-3 py-1 rounded-md border border-orange-100">🔥 Spicy / Bestseller</span>
+                            <span class="text-xs font-bold text-food-terracotta">Gluten-Free</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="menu-item bg-food-cream rounded-2xl overflow-hidden border border-orange-100 shadow-sm flex flex-col justify-between" data-category="mains">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80" alt="Pounded Yam & Soup" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-baseline mb-3">
+                            <h3 class="font-serif text-xl font-bold">Pounded Yam & Seafood Egusi</h3>
+                            <span class="text-food-terracotta font-bold text-lg">₦13,500</span>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Silky smooth pounded yam paired with authentic melon seed soup packed with stockfish, pomo, giant tiger prawns, and crab meat.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-orange-200/50">
+                            <span class="text-xs uppercase tracking-wider font-semibold text-food-sage bg-white px-3 py-1 rounded-md border border-orange-100">⭐ Chef Special</span>
+                            <span class="text-xs font-bold text-food-terracotta">Traditional</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="menu-item bg-food-cream rounded-2xl overflow-hidden border border-orange-100 shadow-sm flex flex-col justify-between" data-category="grills">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Asun & Grills" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-baseline mb-3">
+                            <h3 class="font-serif text-xl font-bold">Fiery Asun & Crispy Yam Wedges</h3>
+                            <span class="text-food-terracotta font-bold text-lg">₦11,000</span>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Flame-smoked diced goat meat tossed in an aggressive habanero pepper and onion reduction, served with crispy fried yam cubes.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-orange-200/50">
+                            <span class="text-xs uppercase tracking-wider font-semibold text-food-sage bg-white px-3 py-1 rounded-md border border-orange-100">🔥 Extra Spicy</span>
+                            <span class="text-xs font-bold text-food-terracotta">Bar & Grill</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="menu-item bg-food-cream rounded-2xl overflow-hidden border border-orange-100 shadow-sm flex flex-col justify-between" data-category="starters">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80" alt="Appetizers" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-baseline mb-3">
+                            <h3 class="font-serif text-xl font-bold">Peppered Snails & Plantain Cups</h3>
+                            <span class="text-food-terracotta font-bold text-lg">₦10,000</span>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Tender giant edible land snails slow-cooked in aromatic green pepper sauce, served inside crispy fried plantain baskets.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-orange-200/50">
+                            <span class="text-xs uppercase tracking-wider font-semibold text-food-sage bg-white px-3 py-1 rounded-md border border-orange-100">⭐ Appetizer Favorite</span>
+                            <span class="text-xs font-bold text-food-terracotta">Small Plates</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="menu-item bg-food-cream rounded-2xl overflow-hidden border border-orange-100 shadow-sm flex flex-col justify-between" data-category="grills">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80" alt="Grilled Fish" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-baseline mb-3">
+                            <h3 class="font-serif text-xl font-bold">Suya-Crusted Grilled Croaker</h3>
+                            <span class="text-food-terracotta font-bold text-lg">₦14,000</span>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Whole fresh croaker fish rubbed in authentic Yaji peanut spice blend, wood-grilled to perfection and served with pickled red onions.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-orange-200/50">
+                            <span class="text-xs uppercase tracking-wider font-semibold text-food-sage bg-white px-3 py-1 rounded-md border border-orange-100">🥜 Contains Peanuts</span>
+                            <span class="text-xs font-bold text-food-terracotta">Seafood Grill</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="menu-item bg-food-cream rounded-2xl overflow-hidden border border-orange-100 shadow-sm flex flex-col justify-between" data-category="drinks">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80" alt="Cocktails" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-baseline mb-3">
+                            <h3 class="font-serif text-xl font-bold">Zobo Infusion Mojito</h3>
+                            <span class="text-food-terracotta font-bold text-lg">₦5,000</span>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Refreshing craft cocktail blending brewed hibiscus (zobo) leaves, fresh mint leaves, lime juice, ginger extract, and premium white rum.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-orange-200/50">
+                            <span class="text-xs uppercase tracking-wider font-semibold text-food-sage bg-white px-3 py-1 rounded-md border border-orange-100">🍸 Signature Cocktail</span>
+                            <span class="text-xs font-bold text-food-terracotta">Bar & Drinks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Experiential Atmosphere Gallery -->
+    <section id="gallery" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-food-terracotta uppercase tracking-widest text-xs font-bold mb-2 block">Atmosphere & Ambiance</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold">Step Inside Buka & Bistro</h2>
+            <div class="w-12 h-1 bg-food-terracotta mx-auto mt-4 rounded-full"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="overflow-hidden rounded-2xl shadow-md h-80">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Restaurant Interior" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="overflow-hidden rounded-2xl shadow-md h-80">
+                <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80" alt="Bar & Cocktails" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="overflow-hidden rounded-2xl shadow-md h-80">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Outdoor Lounge" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Reservation Router & 7. Private Dining Portal -->
+    <section id="reserve" class="bg-food-dark text-white py-24 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            
+            <!-- Reservation Form -->
+            <div class="bg-white text-food-dark p-8 sm:p-10 rounded-2xl shadow-2xl">
+                <span class="text-food-terracotta uppercase tracking-widest text-xs font-bold mb-1 block">Table Booking</span>
+                <h3 class="font-serif text-3xl font-bold mb-2">Reserve Your Table</h3>
+                <p class="text-gray-500 text-sm mb-8">Secure your dining spot instantly for lunch, dinner, or weekend live band sessions.</p>
+                
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-gray-600 mb-1">Full Name</label>
+                        <input type="text" placeholder="Adebayo Ogunlesi" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-food-terracotta text-sm">
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-600 mb-1">Phone Number</label>
+                            <input type="tel" placeholder="+234 803 000 0000" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-food-terracotta text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-600 mb-1">Party Size</label>
+                            <select class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-food-terracotta text-sm bg-white">
+                                <option>2 Guests (Couple Table)</option>
+                                <option>4 Guests (Family Table)</option>
+                                <option>6+ Guests (VIP Booth)</option>
+                                <option>10+ Guests (Private Area)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-gray-600 mb-1">Date & Time</label>
+                        <input type="datetime-local" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-food-terracotta text-sm">
+                    </div>
+                    <button type="button" class="w-full bg-food-terracotta hover:bg-[#b04a25] text-white py-4 rounded-lg font-bold tracking-wide transition-colors shadow-md mt-2">
+                        Confirm Table Reservation
+                    </button>
+                </form>
+            </div>
+
+            <!-- Private Events Portal -->
+            <div id="events" class="space-y-8">
+                <div>
+                    <span class="text-food-gold uppercase tracking-widest text-xs font-bold mb-2 block">Corporate & Celebrations</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4">Host Your Private Events With Us</h2>
+                    <p class="text-gray-300 leading-relaxed text-sm sm:text-base">
+                        From corporate product launches to milestone birthdays and wedding receptions, our dedicated private dining mezzanine accommodates up to 120 guests with customized tasting menus and dedicated hospitality staff.
+                    </p>
+                </div>
+
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 space-y-4">
+                    <h4 class="font-serif text-xl font-bold text-food-gold">Private Dining Amenities</h4>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-food-gold"></i> Fully integrated surround sound and wireless microphones</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-food-gold"></i> Customized buffet or plated African & Continental menus</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-food-gold"></i> Dedicated cocktail bar and personal mixologist</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-food-gold"></i> Valet parking coordination for all attending guests</li>
+                    </ul>
+                    <div class="pt-4">
+                        <a href="mailto:events@bukaandbistro.com" class="inline-block bg-white/10 hover:bg-white/20 text-white border border-white/20 px-6 py-3 rounded-xl font-semibold text-sm transition-all">
+                            Request Private Event Proposal
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 8. Footer -->
+    <footer id="hours" class="bg-[#1a120d] text-gray-400 py-16 px-6 border-t border-white/10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 mb-12 text-sm">
+            <div>
+                <span class="font-serif text-xl font-bold text-food-gold block mb-4">BUKA & BISTRO</span>
+                <p class="text-gray-400 leading-relaxed mb-4">
+                    Redefining culinary excellence through authentic West African heritage and contemporary hospitality.
+                </p>
+                <div class="flex gap-4 text-food-gold">
+                    <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram text-lg"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fa-brands fa-twitter text-lg"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fa-brands fa-facebook text-lg"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4 uppercase tracking-wider text-xs">Opening Hours</h4>
+                <ul class="space-y-2 text-gray-300">
+                    <li class="flex justify-between"><span>Tue – Thu:</span> <span>12 PM – 10 PM</span></li>
+                    <li class="flex justify-between"><span>Fri – Sat:</span> <span>12 PM – 12 AM</span></li>
+                    <li class="flex justify-between"><span>Sunday:</span> <span>1 PM – 10 PM</span></li>
+                    <li class="flex justify-between text-food-gold"><span>Monday:</span> <span>Closed</span></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4 uppercase tracking-wider text-xs">Location & Contact</h4>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-location-dot text-food-gold mt-1"></i>
+                        <span>14 Adeola Odeku Street, Victoria Island, Lagos</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-phone text-food-gold"></i>
+                        <span>+234 (1) 893-2041</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-envelope text-food-gold"></i>
+                        <span>concierge@bukaandbistro.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4 uppercase tracking-wider text-xs">Newsletter & Updates</h4>
+                <p class="text-xs text-gray-400 mb-3">Subscribe to receive secret tasting menu invites and seasonal updates.</p>
+                <form class="space-y-2">
+                    <input type="email" placeholder="Your email address" class="w-full px-3 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white text-xs focus:outline-none focus:border-food-gold">
+                    <button type="button" class="w-full bg-food-terracotta hover:bg-[#b04a25] text-white py-2 rounded-lg text-xs font-bold transition-colors">Join Club</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500">
+            <p>&copy; 2026 Buka & Bistro. All rights reserved.</p>
+            <div class="flex gap-6 mt-4 sm:mt-0">
+                <a href="#" class="hover:text-gray-300">Privacy Policy</a>
+                <a href="#" class="hover:text-gray-300">Terms of Service</a>
+                <a href="#" class="hover:text-gray-300">Accessibility Statement</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Menu Filtering Script -->
+    <script>
+        function filterMenu(category) {
+            const buttons = document.querySelectorAll('.menu-tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-food-dark', 'text-white');
+                btn.classList.add('bg-food-cream', 'text-food-dark');
+            });
+            event.target.classList.remove('bg-food-cream', 'text-food-dark');
+            event.target.classList.add('bg-food-dark', 'text-white');
+
+            const items = document.querySelectorAll('.menu-item');
+            items.forEach(item => {
+                if(category === 'all' || item.getAttribute('data-category') === category) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

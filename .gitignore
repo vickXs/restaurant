@@ -1,0 +1,10 @@
+.env
+__pycache__
+*.pyc
+db.sqlite3
+static
+media
+staticfiles
+env/
+/static/
+/theme/static_src/package-lock.json
